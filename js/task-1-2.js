@@ -148,3 +148,103 @@
 // const res2 = foo(12, 7);
 // console.log(res1);
 // console.log(res2);
+
+// // Задача-7
+// // Напишіть функцію, яка приймає число num.
+// // Функція повинна повернути булеве значення true, якщо num є непарним числом.
+// // В іншому випадку функція повинна повернути булеве значення false.
+
+// function evenNumber(num) {
+//   return num % 2 === 0;
+// }
+// const res1 = evenNumber(12);
+// const res2 = evenNumber(7);
+// console.log(res1);
+// console.log(res2);
+
+// // ІНСТРУКЦІЯ if
+
+// const age = 25;
+// if (age > 10) {
+//   console.log('Користувачу більше 10 років');
+// }
+// якщо умова не виконується, то нічого не відбудеться і буде виконуватися наступний код.
+
+// // ІНСТРУКЦІЯ if...else
+
+// const age = 17;
+// if (age >= 18) {
+//   console.log('Заходь');
+// } else {
+//   console.log('Виходь');
+// }
+
+// const isRaining = false;
+// if (isRaining) {
+//   console.log('Візьми парасольку');
+// } else {
+//   console.log('Доща немає, не бери парасольку');
+// }
+
+// // Блок else...if
+
+// const temp = 7;
+// if (temp > 20) {
+//   console.log('Жарко');
+// } else if (temp > 10) {
+//   console.log('Нормально');
+// } else if (temp > 0) {
+//   console.log('Прохолодно');
+// } else {
+//   console.log('Xолодно');
+// }
+
+// // Тернарний оператор
+// // візьмем таку умову:
+// let message = '';
+// const userBallance = 1000;
+// if (userBallance > 500) {
+//     message = 'Hello';
+// } else {
+//     message = 'Bye'
+// }
+// console.log(message);
+
+// // За допомогою тернарного оператора ця ж умова пишеться так:
+// const userBallance = 1000;
+// let message = userBallance > 500 ? 'Hello' : 'Bye';
+// console.log(message);
+// Використовуємо тоді, коли до якоїсь змінної треба поставити одне з двох значень, або перше, або друге .
+
+// // приклад функції:
+// function task1(isRaining) {
+//   let messageForSister = isRaining
+//     ? 'Візьми парасольку'
+//     : ' Не бери парасольку';
+//   console.log(messageForSister);
+// }
+// task1(true);
+// task1(false);
+
+// // Задача-8
+// // Напишіть функцію, яка приймає параметр str.
+// // Функція повинна повернути булеве значення true, якщо str містить принаймні одну велику літеру.
+// // В іншому випадку функція повинна повернути булеве значення false.
+
+// // Підказка: допоможе toLowerCase();
+// function containsUppercase(str) {
+//     // Перебираємо всі символи рядка
+//     for (let i = 0; i < str.length; i++) {
+//         // Перевіряємо, чи символ є великою літерою
+//         if (str[i] === str[i].toUpperCase() && str[i] !== str[i].toLowerCase()) {
+//             return true;
+//         }
+//     }
+//     return false;
+// }
+
+// // Приклади використання
+// console.log(containsUppercase("hello")); // false
+// console.log(containsUppercase("Hello")); // true
+// console.log(containsUppercase("123ABC")); // true
+// console.log(containsUppercase("123"));   // false
